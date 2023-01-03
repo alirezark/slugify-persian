@@ -3,6 +3,13 @@
 
 [![npm-version]][npm] [![coveralls-status]][coveralls]
 
+##correct config for persian use:
+```js
+slugify("string", {
+          remove: /[$*_+~.%#^٪×،&()'"!\-؟?:@]+/g,
+        })
+```
+
 ```js
 var slugify = require('slugify')
 
